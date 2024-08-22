@@ -135,8 +135,6 @@ I am an Android Developer <img src="https://media.giphy.com/media/WUlplcMpOCEmTG
 
 > 📦 32.8 kB Used in GitHub's Storage 
  > 
-> 🏆 116 Contributions in the Year 2024
- > 
 > 💼 Opted to Hire
  > 
 > 📜 17 Public Repositories 
@@ -197,5 +195,5 @@ HTML                     1 repo              █░░░░░░░░░░�
 ![Lines of Code chart](https://raw.githubusercontent.com/Velord/Velord/main/assets/bar_graph.png)
 
 
- Last Updated on 22/08/2024 13:24:40 UTC
+ Last Updated on 22/08/2024 20:23:29 UTC
 <!--END_SECTION:waka-->
