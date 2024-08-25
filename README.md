@@ -129,7 +129,7 @@ I am an Android Developer <img src="https://media.giphy.com/media/WUlplcMpOCEmTG
 <!--START_SECTION:waka-->
 ![Code Time](http://img.shields.io/badge/Code%20Time-0%20secs-blue)
 
-![Profile Views](http://img.shields.io/badge/Profile%20Views-4-blue)
+![Profile Views](http://img.shields.io/badge/Profile%20Views-3-blue)
 
 **🐱 My GitHub Data** 
 
@@ -197,5 +197,5 @@ HTML                     1 repo              █░░░░░░░░░░�
 ![Lines of Code chart](https://raw.githubusercontent.com/Velord/Velord/main/assets/bar_graph.png)
 
 
- Last Updated on 25/08/2024 13:22:17 UTC
+ Last Updated on 25/08/2024 20:26:01 UTC
 <!--END_SECTION:waka-->
