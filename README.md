@@ -127,13 +127,75 @@ I am an Android Developer <img src="https://media.giphy.com/media/WUlplcMpOCEmTG
 [![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=Velord&layout=compact&theme=vision-friendly-dark)](https://github.com/anuraghazra/github-readme-stats)
 
 <!--START_SECTION:waka-->
+![Code Time](http://img.shields.io/badge/Code%20Time-0%20secs-blue)
 
-```rust
-From: 10 August 2024 - To: 30 August 2024
+![Profile Views](http://img.shields.io/badge/Profile%20Views-0-blue)
 
-Total Time: 0 secs
+**🐱 My GitHub Data** 
 
-No activity tracked
+> 📦 32.8 kB Used in GitHub's Storage 
+ > 
+> 🏆 117 Contributions in the Year 2024
+ > 
+> 💼 Opted to Hire
+ > 
+> 📜 18 Public Repositories 
+ > 
+> 🔑 20 Private Repositories 
+ > 
+**I'm an Early 🐤** 
+
+```text
+🌞 Morning                208 commits         ██░░░░░░░░░░░░░░░░░░░░░░░   09.80 % 
+🌆 Daytime                906 commits         ███████████░░░░░░░░░░░░░░   42.68 % 
+🌃 Evening                576 commits         ███████░░░░░░░░░░░░░░░░░░   27.13 % 
+🌙 Night                  433 commits         █████░░░░░░░░░░░░░░░░░░░░   20.40 % 
+```
+📅 **I'm Most Productive on Tuesday** 
+
+```text
+Monday                   238 commits         ███░░░░░░░░░░░░░░░░░░░░░░   11.21 % 
+Tuesday                  541 commits         ██████░░░░░░░░░░░░░░░░░░░   25.48 % 
+Wednesday                273 commits         ███░░░░░░░░░░░░░░░░░░░░░░   12.86 % 
+Thursday                 200 commits         ██░░░░░░░░░░░░░░░░░░░░░░░   09.42 % 
+Friday                   328 commits         ████░░░░░░░░░░░░░░░░░░░░░   15.45 % 
+Saturday                 213 commits         ███░░░░░░░░░░░░░░░░░░░░░░   10.03 % 
+Sunday                   330 commits         ████░░░░░░░░░░░░░░░░░░░░░   15.54 % 
 ```
 
+
+📊 **This Week I Spent My Time On** 
+
+```text
+🕑︎ Time Zone: Europe/Amsterdam
+
+💬 Programming Languages: 
+No Activity Tracked This Week
+
+🔥 Editors: 
+No Activity Tracked This Week
+
+🐱‍💻 Projects: 
+No Activity Tracked This Week
+
+💻 Operating System: 
+No Activity Tracked This Week
+```
+
+**I Mostly Code in Kotlin** 
+
+```text
+Kotlin                   34 repos            ███████████████████████░░   91.89 % 
+C#                       2 repos             █░░░░░░░░░░░░░░░░░░░░░░░░   05.41 % 
+HTML                     1 repo              █░░░░░░░░░░░░░░░░░░░░░░░░   02.70 % 
+```
+
+
+
+**Timeline**
+
+![Lines of Code chart](https://raw.githubusercontent.com/Velord/Velord/main/assets/bar_graph.png)
+
+
+ Last Updated on 01/09/2024 08:26:10 UTC
 <!--END_SECTION:waka-->
