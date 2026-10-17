@@ -4,6 +4,7 @@
 
 <p align="center">
   <a href="#selected-work">Selected work</a> &nbsp;·&nbsp;
+  <a href="#engineering-observatory">Observatory</a> &nbsp;·&nbsp;
   <a href="#engineering-focus">Engineering focus</a> &nbsp;·&nbsp;
   <a href="#2026--activity">Activity</a> &nbsp;·&nbsp;
   <a href="#get-in-touch">Contact</a>
@@ -72,6 +73,115 @@ An open-source laboratory for **multi-module Kotlin Multiplatform architecture**
     </td>
   </tr>
 </table>
+
+---
+
+## Engineering Observatory
+
+<sub>INSIDE THE BUILD / 03 FIELD NOTES</sub>
+
+Three closer looks at the visual effects, architecture, and continuous integration behind my open-source work.
+
+### 01 / Effect Laboratory
+
+**One Compose renderer. Three different atmospheres.**
+
+The scenes below are captured from [HorizonBloom's actual Compose renderer](https://github.com/Velord/HorizonBloom), not stock artwork.
+
+<table>
+  <tr>
+    <td width="33%" align="center" valign="top">
+      <a href="https://github.com/Velord/HorizonBloom/blob/main/docs/media/preset-dawn.png"><img src="https://raw.githubusercontent.com/Velord/HorizonBloom/main/docs/media/preset-dawn.png" alt="HorizonBloom Dawn scene" width="100%" /></a><br/><sub>01 · DAWN</sub>
+    </td>
+    <td width="33%" align="center" valign="top">
+      <a href="https://github.com/Velord/HorizonBloom/blob/main/docs/media/preset-twilight.png"><img src="https://raw.githubusercontent.com/Velord/HorizonBloom/main/docs/media/preset-twilight.png" alt="HorizonBloom Twilight scene" width="100%" /></a><br/><sub>02 · TWILIGHT</sub>
+    </td>
+    <td width="34%" align="center" valign="top">
+      <a href="https://github.com/Velord/HorizonBloom/blob/main/docs/media/preset-aurora.png"><img src="https://raw.githubusercontent.com/Velord/HorizonBloom/main/docs/media/preset-aurora.png" alt="HorizonBloom Aurora scene" width="100%" /></a><br/><sub>03 · AURORA</sub>
+    </td>
+  </tr>
+</table>
+
+<details>
+<summary><strong>01 · Dawn</strong> — see the Compose configuration</summary>
+
+```kotlin
+HorizonBloom(config = HorizonBloomConfig.DAWN)
+```
+
+</details>
+<details>
+<summary><strong>02 · Twilight</strong> — see the Compose configuration</summary>
+
+```kotlin
+HorizonBloom(config = HorizonBloomConfig.TWILIGHT)
+```
+
+</details>
+<details>
+<summary><strong>03 · Aurora</strong> — see the Compose configuration</summary>
+
+```kotlin
+HorizonBloom(config = HorizonBloomConfig.AURORA)
+```
+
+</details>
+
+[Full animation ↗](https://github.com/Velord/HorizonBloom/blob/main/docs/media/horizon-presets.mp4) · [Live adjustments ↗](https://github.com/Velord/HorizonBloom/blob/main/docs/media/horizon-tuning.mp4) · [Effect reference ↗](https://github.com/Velord/HorizonBloom/blob/main/docs/EFFECTS.md)
+
+### 02 / Architecture X-Ray
+
+**One app. Multiple navigation engines. Explicit module boundaries.**
+
+<details>
+<summary><strong>Open the navigation architecture</strong> · routing and back stacks</summary>
+
+The [ComposeScreenExample navigation toolkit](https://github.com/Velord/ComposeScreenExample/blob/master/infrastructure/navigation/README.md) owns routes, engine adapters, navigation hosts, and separate root/tab back stacks. Feature modules express navigation intent without depending on an engine's route types.
+
+```mermaid
+flowchart LR
+    Config[Build configuration] --> Shell[App shell]
+    Shell --> Host[Navigation host]
+    Host --> Root[Root navigator]
+    Root --> Tabs[Bottom-navigation host]
+    Tabs --> Camera[Camera stack]
+    Tabs --> Demo[Demo stack]
+    Tabs --> Settings[Setting stack]
+```
+
+- **Shared engines:** Nav3 and Voyager (`commonMain`, Android and Desktop).
+- **Android-specific engines:** Compose Navigation, Compose Destinations, and Jetpack/Fragment navigation.
+- **Responsibility:** features own UI and navigation intent; infrastructure owns engine-specific wiring.
+
+[Navigation implementation ↗](https://github.com/Velord/ComposeScreenExample/tree/master/infrastructure/navigation/src)
+
+</details>
+
+<details>
+<summary><strong>Trace module ownership</strong> · shared state and boundaries</summary>
+
+| Area | Responsible module |
+| --- | --- |
+| Route and navigation-engine adapters | `:infrastructure:navigation` |
+| Tab selection, bottom-navigation state and actions | `:ui:feature-bottomnavigation` |
+| Dependency injection and navigation state owner | `:infrastructure:di` |
+| Activity/window, platform containers and theme | App shell |
+
+These boundaries let one UI surface use different navigation engines without leaking their implementation details into feature screens.
+
+[Read the architecture decisions ↗](https://github.com/Velord/ComposeScreenExample/blob/master/infrastructure/navigation/README.md#ownership)
+
+</details>
+
+### 03 / Build Flight Recorder
+
+**Verification history, not a fabricated uptime score.**
+
+![HorizonBloom public CI run history, including completed passes and failures](assets/build-flight-recorder.svg)
+
+Generated from the public [HorizonBloom Verify workflow](https://github.com/Velord/HorizonBloom/actions/workflows/verify.yml), including the Android/Desktop and iOS job results for the latest run. Updated daily by GitHub Actions.
+
+[Explore all workflow runs ↗](https://github.com/Velord/HorizonBloom/actions/workflows/verify.yml)
 
 ---
 
