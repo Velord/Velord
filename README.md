@@ -161,25 +161,6 @@ Saturday                 213 commits         ██░░░░░░░░░�
 Sunday                   332 commits         ████░░░░░░░░░░░░░░░░░░░░░   15.50 % 
 ```
 
-
-📊 **This Week I Spent My Time On** 
-
-```text
-🕑︎ Time Zone: Europe/Amsterdam
-
-💬 Programming Languages: 
-No Activity Tracked This Week
-
-🔥 Editors: 
-No Activity Tracked This Week
-
-🐱‍💻 Projects: 
-No Activity Tracked This Week
-
-💻 Operating System: 
-No Activity Tracked This Week
-```
-
 **I Mostly Code in Kotlin** 
 
 ```text
@@ -187,13 +168,10 @@ Kotlin                   34 repos            ███████████�
 C#                       2 repos             █░░░░░░░░░░░░░░░░░░░░░░░░   05.41 % 
 HTML                     1 repo              █░░░░░░░░░░░░░░░░░░░░░░░░   02.70 % 
 ```
-
-
-
-**Timeline**
-
-![Lines of Code chart](https://raw.githubusercontent.com/Velord/Velord/main/assets/bar_graph.png)
-
-
- Last Updated on 10/09/2024 20:24:18 UTC
 <!--END_SECTION:waka-->
+
+### Timeline — 2026
+
+![GitHub contributions in 2026](assets/timeline-2026.svg)
+
+Public GitHub contribution activity for 2026, refreshed weekly.
