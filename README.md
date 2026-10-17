@@ -10,13 +10,15 @@
   <a href="#get-in-touch">Contact</a>
 </p>
 
-I’m a **Senior Android Engineer** working across mobile architecture, Kotlin Multiplatform, polished Compose interfaces, and connected-device software. I enjoy turning complicated systems into straightforward, dependable experiences.
+I’m a **Senior Android Engineer** focused on **Compose Multiplatform**—building reusable UI libraries, comparing navigation architectures, and engineering connected-device software across supported platforms.
+
+**Featured Compose Multiplatform work:** [HorizonBloom](https://github.com/Velord/HorizonBloom) (published visual-effects library) · [ComposeScreenExample](https://github.com/Velord/ComposeScreenExample) (architecture and UI laboratory spanning five navigation libraries).
 
 ---
 
 ## Selected work
 
-<sub>01 / OPEN-SOURCE LIBRARY · ANDROID · DESKTOP · iOS</sub>
+<sub>01 / COMPOSE MULTIPLATFORM LIBRARY · ANDROID · DESKTOP · iOS</sub>
 
 ### [HorizonBloom](https://github.com/Velord/HorizonBloom)
 
@@ -39,17 +41,21 @@ I’m a **Senior Android Engineer** working across mobile architecture, Kotlin M
   </tr>
 </table>
 
-<sub>02 / ARCHITECTURE LAB · ANDROID · DESKTOP</sub>
+<sub>02 / COMPOSE MULTIPLATFORM ARCHITECTURE LAB · ANDROID · DESKTOP</sub>
 
 ### [ComposeScreenExample](https://github.com/Velord/ComposeScreenExample)
 
 <a href="https://github.com/Velord/ComposeScreenExample">
-  <img src="assets/compose-architecture.svg" alt="ComposeScreenExample: shared Compose UI, navigation engines, modular features, and Android/Desktop targets" width="100%" />
+  <img src="assets/compose-architecture.svg" alt="ComposeScreenExample: five navigation libraries — Compose Nav3, Voyager, Compose Navigation, Compose Destinations, Jetpack Navigation — in one Compose Multiplatform architecture" width="100%" />
 </a>
 
-An open-source laboratory for **multi-module Kotlin Multiplatform architecture**: compare navigation engines, experiment with reusable Compose components, and test shared UI against platform boundaries.
+A multi-module **Compose Multiplatform architecture and UI laboratory** for comparing **five navigation libraries** with shared Compose screens, multiple back stacks, and explicit platform boundaries.
 
-**Inside:** Nav3 · Voyager · MVVM · Koin · Ktor · custom Compose UI
+**Five libraries:** **Compose Nav3** · **Voyager** · **Compose Navigation** · **Compose Destinations** · **Jetpack Navigation**.
+
+**Android + Desktop:** Nav3, Voyager. **Android-only:** Compose Navigation, Compose Destinations, Jetpack Navigation.
+
+**Also inside:** MVVM · Koin · Ktor · custom Compose UI.
 
 [Explore architecture and demos ↗](https://github.com/Velord/ComposeScreenExample)
 
@@ -80,7 +86,7 @@ An open-source laboratory for **multi-module Kotlin Multiplatform architecture**
 
 <sub>INSIDE THE BUILD / 03 FIELD NOTES</sub>
 
-Three closer looks at the visual effects, architecture, and continuous integration behind my open-source work.
+Two Compose Multiplatform projects, explored from the inside: HorizonBloom’s rendered effects and release pipeline, plus ComposeScreenExample’s five-library navigation architecture.
 
 ### 01 / Effect Laboratory
 
@@ -131,7 +137,15 @@ HorizonBloom(config = HorizonBloomConfig.AURORA)
 
 ### 02 / Architecture X-Ray
 
-**One app. Multiple navigation engines. Explicit module boundaries.**
+**One Compose Multiplatform architecture. Five navigation libraries. Explicit module boundaries.**
+
+| Navigation library | Supported in this project |
+| --- | --- |
+| **Compose Nav3** | Android + Desktop (`commonMain`) |
+| **Voyager** | Android + Desktop (`commonMain`) |
+| **Compose Navigation** | Android (`androidMain`) |
+| **Compose Destinations** | Android (`androidMain`) |
+| **Jetpack Navigation** | Android (`androidMain`, legacy Fragment navigation) |
 
 <details>
 <summary><strong>Open the navigation architecture</strong> · routing and back stacks</summary>
@@ -140,18 +154,22 @@ The [ComposeScreenExample navigation toolkit](https://github.com/Velord/ComposeS
 
 ```mermaid
 flowchart LR
-    Config[Build configuration] --> Shell[App shell]
-    Shell --> Host[Navigation host]
-    Host --> Root[Root navigator]
-    Root --> Tabs[Bottom-navigation host]
-    Tabs --> Camera[Camera stack]
-    Tabs --> Demo[Demo stack]
-    Tabs --> Settings[Setting stack]
+    Config[Build configuration] --> Library{Navigation library}
+    Library --> Nav3[Compose Nav3]
+    Library --> Voyager[Voyager]
+    Library --> ComposeNav[Compose Navigation]
+    Library --> Destinations[Compose Destinations]
+    Library --> Jetpack[Jetpack Navigation]
+    Nav3 --> Shared[Shared Compose UI]
+    Voyager --> Shared
+    ComposeNav --> Shared
+    Destinations --> Shared
+    Jetpack --> Fragment[Legacy Fragment surface]
 ```
 
-- **Shared engines:** Nav3 and Voyager (`commonMain`, Android and Desktop).
-- **Android-specific engines:** Compose Navigation, Compose Destinations, and Jetpack/Fragment navigation.
-- **Responsibility:** features own UI and navigation intent; infrastructure owns engine-specific wiring.
+- **Shared implementations:** Compose Nav3 and Voyager in `commonMain` (Android and Desktop).
+- **Android-specific implementations:** Compose Navigation, Compose Destinations, and Jetpack Navigation in `androidMain`.
+- **Responsibility:** feature modules own UI/navigation intent; infrastructure owns adapters and library-specific wiring.
 
 [Navigation implementation ↗](https://github.com/Velord/ComposeScreenExample/tree/master/infrastructure/navigation/src)
 
