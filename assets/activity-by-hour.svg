@@ -1,30 +1,89 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="960" height="60" class="large">
-    <defs>
-        <style/>
-    </defs>
-    <style>@keyframes animation-gauge{0%{stroke-dasharray:0 329}}@keyframes animation-rainbow{0%,to{color:#7f00ff;fill:#7f00ff}14%{color:#a933ff;fill:#a933ff}29%{color:#007fff;fill:#007fff}43%{color:#00ff7f;fill:#00ff7f}57%{color:#ff0;fill:#ff0}71%{color:#ff7f00;fill:#ff7f00}86%{color:red;fill:red}}svg{font-family:-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji;font-size:14px;color:#777}h2{margin:8px 0 2px;padding:0;color:#0366d6;font-weight:400;font-size:16px}h2 svg{fill:currentColor}section&gt;.field{margin-left:5px;margin-right:5px}.field{display:flex;align-items:center;margin-bottom:2px;white-space:nowrap}.field.wrap,.row{flex-wrap:wrap}.field svg{margin:0 8px;fill:#959da5;flex-shrink:0}.field.error{color:#cb2431}.field.error svg{fill:#cb2431}.row{display:flex}.row section{flex:1 1 0}:root{--color-calendar-graph-day-bg:#ebedf0;--color-calendar-graph-day-border:rgba(27,31,35,0.06);--color-calendar-graph-day-L1-bg:#9be9a8;--color-calendar-graph-day-L2-bg:#40c463;--color-calendar-graph-day-L3-bg:#30a14e;--color-calendar-graph-day-L4-bg:#216e39;--color-calendar-halloween-graph-day-L1-bg:#ffee4a;--color-calendar-halloween-graph-day-L2-bg:#ffc501;--color-calendar-halloween-graph-day-L3-bg:#fe9600;--color-calendar-halloween-graph-day-L4-bg:#03001c;--color-calendar-winter-graph-day-L1-bg:#0a3069;--color-calendar-winter-graph-day-L2-bg:#0969da;--color-calendar-winter-graph-day-L3-bg:#54aeff;--color-calendar-winter-graph-day-L4-bg:#b6e3ff;--color-calendar-graph-day-L4-border:rgba(27,31,35,0.06);--color-calendar-graph-day-L3-border:rgba(27,31,35,0.06);--color-calendar-graph-day-L2-border:rgba(27,31,35,0.06);--color-calendar-graph-day-L1-border:rgba(27,31,35,0.06)}#metrics-end{width:100%}</style>
-    <style/>
-    <foreignObject x="0" y="0" width="100%" height="100%">
-        <div xmlns="http://www.w3.org/1999/xhtml" xmlns:xlink="http://www.w3.org/1999/xlink" class="items-wrapper">
-            <section class="habits">
-                <h2 class="field wrap">
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16">
-                        <path fill-rule="evenodd" d="M8 1.5c-2.363 0-4 1.69-4 3.75 0 .984.424 1.625.984 2.304l.214.253c.223.264.47.556.673.848.284.411.537.896.621 1.49a.75.75 0 01-1.484.211c-.04-.282-.163-.547-.37-.847a8.695 8.695 0 00-.542-.68c-.084-.1-.173-.205-.268-.32C3.201 7.75 2.5 6.766 2.5 5.25 2.5 2.31 4.863 0 8 0s5.5 2.31 5.5 5.25c0 1.516-.701 2.5-1.328 3.259-.095.115-.184.22-.268.319-.207.245-.383.453-.541.681-.208.3-.33.565-.37.847a.75.75 0 01-1.485-.212c.084-.593.337-1.078.621-1.489.203-.292.45-.584.673-.848.075-.088.147-.173.213-.253.561-.679.985-1.32.985-2.304 0-2.06-1.637-3.75-4-3.75zM6 15.25a.75.75 0 01.75-.75h2.5a.75.75 0 010 1.5h-2.5a.75.75 0 01-.75-.75zM5.75 12a.75.75 0 000 1.5h4.5a.75.75 0 000-1.5h-4.5z"/>
-                    </svg>
-                    Recent coding habits
-                </h2>
-                <div class="row">
-                    <section>
-                        <div class="field error">
-                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16">
-                                <path fill-rule="evenodd" d="M2.343 13.657A8 8 0 1113.657 2.343 8 8 0 012.343 13.657zM6.03 4.97a.75.75 0 00-1.06 1.06L6.94 8 4.97 9.97a.75.75 0 101.06 1.06L8 9.06l1.97 1.97a.75.75 0 101.06-1.06L9.06 8l1.97-1.97a.75.75 0 10-1.06-1.06L8 6.94 6.03 4.97z"/>
-                            </svg>
-                            Unexpected error
-                        </div>
-                    </section>
-                </div>
-            </section>
-        </div>
-        <div xmlns="http://www.w3.org/1999/xhtml" id="metrics-end"></div>
-    </foreignObject>
+<svg xmlns="http://www.w3.org/2000/svg" width="1120" height="340" viewBox="0 0 1120 340" role="img" aria-labelledby="title description">
+<title id="title">GitHub public commit activity by local hour</title>
+<desc id="description">Last 90 days, Europe/Kyiv. 42 authored commits from 3 public repositories. Peak at 02:00 with 7 commits. These are public commits, not working hours or private coding activity.</desc>
+<defs><linearGradient id="surface" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#101b28"/><stop offset="1" stop-color="#0a121b"/></linearGradient><linearGradient id="bar" x1="0" y1="1" x2="0" y2="0"><stop stop-color="#33566c"/><stop offset="1" stop-color="#83c9be"/></linearGradient></defs>
+<rect width="1120" height="340" rx="14" fill="url(#surface)"/>
+<text x="34" y="35" fill="#7ebdb4" font-family="Consolas,monospace" font-size="12" letter-spacing="1.9">RECENT PUBLIC COMMITS / LOCAL TIME</text>
+<text x="34" y="71" fill="#f1f5f9" font-family="Segoe UI,Arial,sans-serif" font-size="28" font-weight="700">Activity by hour</text>
+<text x="1084" y="43" text-anchor="end" fill="#acc0cc" font-family="Consolas,monospace" font-size="12">3 REPOSITORIES · 42 COMMITS</text>
+<text x="1084" y="69" text-anchor="end" fill="#85a2b1" font-family="Segoe UI,Arial,sans-serif" font-size="13">Last 90 days · Europe/Kyiv</text>
+<path d="M34 111H1085" stroke="#314758" stroke-opacity=".42"/>
+<path d="M34 161H1085" stroke="#314758" stroke-opacity=".42"/>
+<path d="M34 211H1085" stroke="#314758" stroke-opacity=".42"/>
+<path d="M34 261H1085" stroke="#314758" stroke-opacity=".42"/>
+<rect x="40" y="115" width="27" height="146" rx="3" fill="#1a2a37" opacity=".68"/>
+<rect x="40" y="203" width="27" height="58" rx="3" fill="url(#bar)"><title>00:00–00:59 · 3 authored commits</title></rect>
+<text x="53.5" y="283" fill="#b4c5d2" font-family="Consolas,monospace" font-size="11" text-anchor="middle">00</text>
+<rect x="84" y="115" width="27" height="146" rx="3" fill="#1a2a37" opacity=".68"/>
+<rect x="84" y="203" width="27" height="58" rx="3" fill="url(#bar)"><title>01:00–01:59 · 3 authored commits</title></rect>
+<text x="97.5" y="283" fill="#b4c5d2" font-family="Consolas,monospace" font-size="11" text-anchor="middle">01</text>
+<rect x="128" y="115" width="27" height="146" rx="3" fill="#1a2a37" opacity=".68"/>
+<rect x="128" y="126" width="27" height="135" rx="3" fill="#e8b995"><title>02:00–02:59 · 7 authored commits</title></rect>
+<text x="141.5" y="283" fill="#b4c5d2" font-family="Consolas,monospace" font-size="11" text-anchor="middle">02</text>
+<rect x="172" y="115" width="27" height="146" rx="3" fill="#1a2a37" opacity=".68"/>
+<rect x="172" y="242" width="27" height="19" rx="3" fill="url(#bar)"><title>03:00–03:59 · 1 authored commits</title></rect>
+<text x="185.5" y="283" fill="#b4c5d2" font-family="Consolas,monospace" font-size="11" text-anchor="middle">03</text>
+<rect x="216" y="115" width="27" height="146" rx="3" fill="#1a2a37" opacity=".68"/>
+<rect x="216" y="261" width="27" height="0" rx="3" fill="url(#bar)"><title>04:00–04:59 · 0 authored commits</title></rect>
+<text x="229.5" y="283" fill="#b4c5d2" font-family="Consolas,monospace" font-size="11" text-anchor="middle">04</text>
+<rect x="260" y="115" width="27" height="146" rx="3" fill="#1a2a37" opacity=".68"/>
+<rect x="260" y="261" width="27" height="0" rx="3" fill="url(#bar)"><title>05:00–05:59 · 0 authored commits</title></rect>
+<text x="273.5" y="283" fill="#b4c5d2" font-family="Consolas,monospace" font-size="11" text-anchor="middle">05</text>
+<rect x="304" y="115" width="27" height="146" rx="3" fill="#1a2a37" opacity=".68"/>
+<rect x="304" y="261" width="27" height="0" rx="3" fill="url(#bar)"><title>06:00–06:59 · 0 authored commits</title></rect>
+<text x="317.5" y="283" fill="#b4c5d2" font-family="Consolas,monospace" font-size="11" text-anchor="middle">06</text>
+<rect x="348" y="115" width="27" height="146" rx="3" fill="#1a2a37" opacity=".68"/>
+<rect x="348" y="261" width="27" height="0" rx="3" fill="url(#bar)"><title>07:00–07:59 · 0 authored commits</title></rect>
+<text x="361.5" y="283" fill="#b4c5d2" font-family="Consolas,monospace" font-size="11" text-anchor="middle">07</text>
+<rect x="392" y="115" width="27" height="146" rx="3" fill="#1a2a37" opacity=".68"/>
+<rect x="392" y="261" width="27" height="0" rx="3" fill="url(#bar)"><title>08:00–08:59 · 0 authored commits</title></rect>
+<text x="405.5" y="283" fill="#b4c5d2" font-family="Consolas,monospace" font-size="11" text-anchor="middle">08</text>
+<rect x="436" y="115" width="27" height="146" rx="3" fill="#1a2a37" opacity=".68"/>
+<rect x="436" y="261" width="27" height="0" rx="3" fill="url(#bar)"><title>09:00–09:59 · 0 authored commits</title></rect>
+<text x="449.5" y="283" fill="#b4c5d2" font-family="Consolas,monospace" font-size="11" text-anchor="middle">09</text>
+<rect x="480" y="115" width="27" height="146" rx="3" fill="#1a2a37" opacity=".68"/>
+<rect x="480" y="261" width="27" height="0" rx="3" fill="url(#bar)"><title>10:00–10:59 · 0 authored commits</title></rect>
+<text x="493.5" y="283" fill="#b4c5d2" font-family="Consolas,monospace" font-size="11" text-anchor="middle">10</text>
+<rect x="524" y="115" width="27" height="146" rx="3" fill="#1a2a37" opacity=".68"/>
+<rect x="524" y="261" width="27" height="0" rx="3" fill="url(#bar)"><title>11:00–11:59 · 0 authored commits</title></rect>
+<text x="537.5" y="283" fill="#b4c5d2" font-family="Consolas,monospace" font-size="11" text-anchor="middle">11</text>
+<rect x="568" y="115" width="27" height="146" rx="3" fill="#1a2a37" opacity=".68"/>
+<rect x="568" y="261" width="27" height="0" rx="3" fill="url(#bar)"><title>12:00–12:59 · 0 authored commits</title></rect>
+<text x="581.5" y="283" fill="#b4c5d2" font-family="Consolas,monospace" font-size="11" text-anchor="middle">12</text>
+<rect x="612" y="115" width="27" height="146" rx="3" fill="#1a2a37" opacity=".68"/>
+<rect x="612" y="242" width="27" height="19" rx="3" fill="url(#bar)"><title>13:00–13:59 · 1 authored commits</title></rect>
+<text x="625.5" y="283" fill="#b4c5d2" font-family="Consolas,monospace" font-size="11" text-anchor="middle">13</text>
+<rect x="656" y="115" width="27" height="146" rx="3" fill="#1a2a37" opacity=".68"/>
+<rect x="656" y="261" width="27" height="0" rx="3" fill="url(#bar)"><title>14:00–14:59 · 0 authored commits</title></rect>
+<text x="669.5" y="283" fill="#b4c5d2" font-family="Consolas,monospace" font-size="11" text-anchor="middle">14</text>
+<rect x="700" y="115" width="27" height="146" rx="3" fill="#1a2a37" opacity=".68"/>
+<rect x="700" y="184" width="27" height="77" rx="3" fill="url(#bar)"><title>15:00–15:59 · 4 authored commits</title></rect>
+<text x="713.5" y="283" fill="#b4c5d2" font-family="Consolas,monospace" font-size="11" text-anchor="middle">15</text>
+<rect x="744" y="115" width="27" height="146" rx="3" fill="#1a2a37" opacity=".68"/>
+<rect x="744" y="261" width="27" height="0" rx="3" fill="url(#bar)"><title>16:00–16:59 · 0 authored commits</title></rect>
+<text x="757.5" y="283" fill="#b4c5d2" font-family="Consolas,monospace" font-size="11" text-anchor="middle">16</text>
+<rect x="788" y="115" width="27" height="146" rx="3" fill="#1a2a37" opacity=".68"/>
+<rect x="788" y="242" width="27" height="19" rx="3" fill="url(#bar)"><title>17:00–17:59 · 1 authored commits</title></rect>
+<text x="801.5" y="283" fill="#b4c5d2" font-family="Consolas,monospace" font-size="11" text-anchor="middle">17</text>
+<rect x="832" y="115" width="27" height="146" rx="3" fill="#1a2a37" opacity=".68"/>
+<rect x="832" y="242" width="27" height="19" rx="3" fill="url(#bar)"><title>18:00–18:59 · 1 authored commits</title></rect>
+<text x="845.5" y="283" fill="#b4c5d2" font-family="Consolas,monospace" font-size="11" text-anchor="middle">18</text>
+<rect x="876" y="115" width="27" height="146" rx="3" fill="#1a2a37" opacity=".68"/>
+<rect x="876" y="126" width="27" height="135" rx="3" fill="url(#bar)"><title>19:00–19:59 · 7 authored commits</title></rect>
+<text x="889.5" y="283" fill="#b4c5d2" font-family="Consolas,monospace" font-size="11" text-anchor="middle">19</text>
+<rect x="920" y="115" width="27" height="146" rx="3" fill="#1a2a37" opacity=".68"/>
+<rect x="920" y="222" width="27" height="39" rx="3" fill="url(#bar)"><title>20:00–20:59 · 2 authored commits</title></rect>
+<text x="933.5" y="283" fill="#b4c5d2" font-family="Consolas,monospace" font-size="11" text-anchor="middle">20</text>
+<rect x="964" y="115" width="27" height="146" rx="3" fill="#1a2a37" opacity=".68"/>
+<rect x="964" y="222" width="27" height="39" rx="3" fill="url(#bar)"><title>21:00–21:59 · 2 authored commits</title></rect>
+<text x="977.5" y="283" fill="#b4c5d2" font-family="Consolas,monospace" font-size="11" text-anchor="middle">21</text>
+<rect x="1008" y="115" width="27" height="146" rx="3" fill="#1a2a37" opacity=".68"/>
+<rect x="1008" y="145" width="27" height="116" rx="3" fill="url(#bar)"><title>22:00–22:59 · 6 authored commits</title></rect>
+<text x="1021.5" y="283" fill="#b4c5d2" font-family="Consolas,monospace" font-size="11" text-anchor="middle">22</text>
+<rect x="1052" y="115" width="27" height="146" rx="3" fill="#1a2a37" opacity=".68"/>
+<rect x="1052" y="184" width="27" height="77" rx="3" fill="url(#bar)"><title>23:00–23:59 · 4 authored commits</title></rect>
+<text x="1065.5" y="283" fill="#b4c5d2" font-family="Consolas,monospace" font-size="11" text-anchor="middle">23</text>
+<path d="M34 261H1085" stroke="#7897a7" stroke-opacity=".5"/>
+<text x="34" y="315" fill="#8da3b4" font-family="Segoe UI,Arial,sans-serif" font-size="12">Authored 2026-07-19 – 2026-10-17 · Europe/Kyiv (DST-aware)</text>
+<text x="1084" y="315" text-anchor="end" fill="#8da3b4" font-family="Segoe UI,Arial,sans-serif" font-size="12">Public commits only · Not hours worked</text>
 </svg>

@@ -117,3 +117,9 @@ Generated from the public [HorizonBloom Verify workflow](https://github.com/Velo
 ![Contributions grouped by weekday in 2026](assets/weekday-activity-2026.svg)
 
 <sub>Actual 2026 GitHub contributions grouped by weekday, not coding hours · Refreshed weekly</sub>
+
+### Activity by hour
+
+![Public authored commits by hour of day](assets/activity-by-hour.svg)
+
+<sub>Public authored commits in the most recent 90 days · Europe/Kyiv local time · Weekly refresh. This chart excludes private work and does not measure hours spent coding.</sub>
