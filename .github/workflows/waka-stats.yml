@@ -1,9 +1,7 @@
 name: Waka Full Readme
 
 on:
-  schedule:
-    # Runs at 12am IST
-    - cron:  '0 8,13,20 * * *'
+  # Legacy stats are manual only; keep the profile's minimal layout stable.
   workflow_dispatch:
 jobs:
   update-readme:
