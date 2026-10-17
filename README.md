@@ -3,16 +3,28 @@
 </p>
 
 <p align="center">
+  <a href="#get-in-touch">Get in touch</a> &nbsp;·&nbsp;
   <a href="#selected-work">Selected work</a> &nbsp;·&nbsp;
-  <a href="#engineering-observatory">Observatory</a> &nbsp;·&nbsp;
   <a href="#engineering-focus">Engineering focus</a> &nbsp;·&nbsp;
-  <a href="#2026--activity">Activity</a> &nbsp;·&nbsp;
-  <a href="#get-in-touch">Contact</a>
+  <a href="#build-flight-recorder">Builds</a> &nbsp;·&nbsp;
+  <a href="#2026--activity">Activity</a>
 </p>
 
 I’m a **Senior Android Engineer** focused on **Compose Multiplatform**—building reusable UI libraries, comparing navigation architectures, and engineering connected-device software across supported platforms.
 
 **Featured Compose Multiplatform work:** [HorizonBloom](https://github.com/Velord/HorizonBloom) (published visual-effects library) · [ComposeScreenExample](https://github.com/Velord/ComposeScreenExample) (architecture and UI laboratory spanning five navigation libraries).
+
+---
+
+## Get in touch
+
+**Building Android or Kotlin Multiplatform software?** Connect with me or explore my open-source work.
+
+<p>
+  <a href="https://www.linkedin.com/in/vlad-y-26079a193/"><img src="assets/contact-linkedin.svg" alt="Connect with Vlad Yaroshenko on LinkedIn" width="310" /></a>
+  &nbsp;
+  <a href="https://github.com/Velord"><img src="assets/contact-github.svg" alt="Explore Velord projects on GitHub" width="310" /></a>
+</p>
 
 ---
 
@@ -82,116 +94,7 @@ A multi-module **Compose Multiplatform architecture and UI laboratory** for comp
 
 ---
 
-## Engineering Observatory
-
-<sub>INSIDE THE BUILD / 03 FIELD NOTES</sub>
-
-Two Compose Multiplatform projects, explored from the inside: HorizonBloom’s rendered effects and release pipeline, plus ComposeScreenExample’s five-library navigation architecture.
-
-### 01 / Effect Laboratory
-
-**One Compose renderer. Three different atmospheres.**
-
-The scenes below are captured from [HorizonBloom's actual Compose renderer](https://github.com/Velord/HorizonBloom), not stock artwork.
-
-<table>
-  <tr>
-    <td width="33%" align="center" valign="top">
-      <a href="https://github.com/Velord/HorizonBloom/blob/main/docs/media/preset-dawn.png"><img src="https://raw.githubusercontent.com/Velord/HorizonBloom/main/docs/media/preset-dawn.png" alt="HorizonBloom Dawn scene" width="100%" /></a><br/><sub>01 · DAWN</sub>
-    </td>
-    <td width="33%" align="center" valign="top">
-      <a href="https://github.com/Velord/HorizonBloom/blob/main/docs/media/preset-twilight.png"><img src="https://raw.githubusercontent.com/Velord/HorizonBloom/main/docs/media/preset-twilight.png" alt="HorizonBloom Twilight scene" width="100%" /></a><br/><sub>02 · TWILIGHT</sub>
-    </td>
-    <td width="34%" align="center" valign="top">
-      <a href="https://github.com/Velord/HorizonBloom/blob/main/docs/media/preset-aurora.png"><img src="https://raw.githubusercontent.com/Velord/HorizonBloom/main/docs/media/preset-aurora.png" alt="HorizonBloom Aurora scene" width="100%" /></a><br/><sub>03 · AURORA</sub>
-    </td>
-  </tr>
-</table>
-
-<details>
-<summary><strong>01 · Dawn</strong> — see the Compose configuration</summary>
-
-```kotlin
-HorizonBloom(config = HorizonBloomConfig.DAWN)
-```
-
-</details>
-<details>
-<summary><strong>02 · Twilight</strong> — see the Compose configuration</summary>
-
-```kotlin
-HorizonBloom(config = HorizonBloomConfig.TWILIGHT)
-```
-
-</details>
-<details>
-<summary><strong>03 · Aurora</strong> — see the Compose configuration</summary>
-
-```kotlin
-HorizonBloom(config = HorizonBloomConfig.AURORA)
-```
-
-</details>
-
-[Full animation ↗](https://github.com/Velord/HorizonBloom/blob/main/docs/media/horizon-presets.mp4) · [Live adjustments ↗](https://github.com/Velord/HorizonBloom/blob/main/docs/media/horizon-tuning.mp4) · [Effect reference ↗](https://github.com/Velord/HorizonBloom/blob/main/docs/EFFECTS.md)
-
-### 02 / Architecture X-Ray
-
-**One Compose Multiplatform architecture. Five navigation libraries. Explicit module boundaries.**
-
-| Navigation library | Supported in this project |
-| --- | --- |
-| **Compose Nav3** | Android + Desktop (`commonMain`) |
-| **Voyager** | Android + Desktop (`commonMain`) |
-| **Compose Navigation** | Android (`androidMain`) |
-| **Compose Destinations** | Android (`androidMain`) |
-| **Jetpack Navigation** | Android (`androidMain`, legacy Fragment navigation) |
-
-<details>
-<summary><strong>Open the navigation architecture</strong> · routing and back stacks</summary>
-
-The [ComposeScreenExample navigation toolkit](https://github.com/Velord/ComposeScreenExample/blob/master/infrastructure/navigation/README.md) owns routes, engine adapters, navigation hosts, and separate root/tab back stacks. Feature modules express navigation intent without depending on an engine's route types.
-
-```mermaid
-flowchart LR
-    Config[Build configuration] --> Library{Navigation library}
-    Library --> Nav3[Compose Nav3]
-    Library --> Voyager[Voyager]
-    Library --> ComposeNav[Compose Navigation]
-    Library --> Destinations[Compose Destinations]
-    Library --> Jetpack[Jetpack Navigation]
-    Nav3 --> Shared[Shared Compose UI]
-    Voyager --> Shared
-    ComposeNav --> Shared
-    Destinations --> Shared
-    Jetpack --> Fragment[Legacy Fragment surface]
-```
-
-- **Shared implementations:** Compose Nav3 and Voyager in `commonMain` (Android and Desktop).
-- **Android-specific implementations:** Compose Navigation, Compose Destinations, and Jetpack Navigation in `androidMain`.
-- **Responsibility:** feature modules own UI/navigation intent; infrastructure owns adapters and library-specific wiring.
-
-[Navigation implementation ↗](https://github.com/Velord/ComposeScreenExample/tree/master/infrastructure/navigation/src)
-
-</details>
-
-<details>
-<summary><strong>Trace module ownership</strong> · shared state and boundaries</summary>
-
-| Area | Responsible module |
-| --- | --- |
-| Route and navigation-engine adapters | `:infrastructure:navigation` |
-| Tab selection, bottom-navigation state and actions | `:ui:feature-bottomnavigation` |
-| Dependency injection and navigation state owner | `:infrastructure:di` |
-| Activity/window, platform containers and theme | App shell |
-
-These boundaries let one UI surface use different navigation engines without leaking their implementation details into feature screens.
-
-[Read the architecture decisions ↗](https://github.com/Velord/ComposeScreenExample/blob/master/infrastructure/navigation/README.md#ownership)
-
-</details>
-
-### 03 / Build Flight Recorder
+## Build Flight Recorder
 
 **Verification history, not a fabricated uptime score.**
 
@@ -209,8 +112,8 @@ Generated from the public [HorizonBloom Verify workflow](https://github.com/Velo
 
 <sub>GitHub contribution activity · Automatically refreshed weekly</sub>
 
----
+### Weekday activity
 
-## Get in touch
+![Contributions grouped by weekday in 2026](assets/weekday-activity-2026.svg)
 
-**Interested in building something together?** Find me on [LinkedIn ↗](https://www.linkedin.com/in/vlad-y-26079a193/) or explore more work on [GitHub ↗](https://github.com/Velord).
+<sub>Actual 2026 GitHub contributions grouped by weekday, not coding hours · Refreshed weekly</sub>

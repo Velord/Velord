@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="310" height="86" viewBox="0 0 310 86" role="img" aria-labelledby="title desc">
+<title id="title">Explore on GitHub</title><desc id="desc">GitHub profile button with code icon, title and arrow</desc>
+<defs><linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#1c2937"/><stop offset="1" stop-color="#111a25"/></linearGradient></defs>
+<rect width="310" height="86" rx="12" fill="url(#bg)" stroke="#52677c" stroke-opacity=".85"/>
+<rect x="17" y="20" width="46" height="46" rx="9" fill="#263747" stroke="#61809a" stroke-opacity=".65"/>
+<path d="M31 38 25 43l6 5m18-10 6 5-6 5m-6-15-5 20" stroke="#b5dbdf" stroke-width="2.4" stroke-linejoin="round" stroke-linecap="round" fill="none"/>
+<text x="80" y="37" fill="#f1f5fa" font-family="Segoe UI,Arial,sans-serif" font-size="19" font-weight="700" letter-spacing=".1">GitHub</text>
+<text x="80" y="58" fill="#a6bdce" font-family="Segoe UI,Arial,sans-serif" font-size="12">Explore code and projects</text>
+<path d="M270 38h18m-8-8 8 8-8 8" fill="none" stroke="#c9dfed" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
