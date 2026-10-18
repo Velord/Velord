@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1120" height="338" viewBox="0 0 1120 338" role="img" aria-labelledby="title description">
 <title id="title">HorizonBloom Build Flight Recorder</title>
-<desc id="description">Last 9 public Verify workflow runs from 2026-10-16 through 2026-10-17: 5 successful, 4 failed. Most recent Android/Desktop job success; iOS job success.</desc>
+<desc id="description">Last 9 public Verify workflow runs from 2026-10-17 through 2026-10-18: 7 successful, 2 failed. Most recent Android/Desktop job success; iOS job success.</desc>
 <defs>
 <linearGradient id="base" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#0e1925"/><stop offset="1" stop-color="#0a111a"/></linearGradient>
 <pattern id="grid" width="32" height="32" patternUnits="userSpaceOnUse"><path d="M32 0H0V32" fill="none" stroke="#88b2c9" stroke-opacity=".052"/></pattern>
@@ -9,7 +9,7 @@
 <rect width="1120" height="338" rx="16" fill="url(#grid)"/>
 <text x="35" y="42" fill="#78c9b6" font-family="Consolas,monospace" font-size="12" letter-spacing="2.2">HORIZONBLOOM / BUILD FLIGHT RECORDER</text>
 <text x="35" y="92" fill="#eaf3f7" font-family="Segoe UI,Arial,sans-serif" font-size="34" font-weight="720">Verification history</text>
-<text x="35" y="120" fill="#8ea5b8" font-family="Segoe UI,Arial,sans-serif" font-size="14">9 public runs / 2026-10-16 to 2026-10-17</text>
+<text x="35" y="120" fill="#8ea5b8" font-family="Segoe UI,Arial,sans-serif" font-size="14">9 public runs / 2026-10-17 to 2026-10-18</text>
 <rect x="773" y="38" width="311" height="99" rx="10" fill="#13282c" stroke="#34736c"/>
 <circle cx="797" cy="64" r="5" fill="#75dcb3"/>
 <text x="811" y="68" fill="#75dcb3" font-family="Consolas,monospace" font-size="13" letter-spacing="1">LATEST / PASS</text>
@@ -20,33 +20,33 @@
 <path d="M35 158H1085" stroke="#314454"/>
 <text x="35" y="184" fill="#8da1b2" font-family="Consolas,monospace" font-size="11" letter-spacing="1.1">EARLIER</text>
 <text x="1085" y="184" text-anchor="end" fill="#8da1b2" font-family="Consolas,monospace" font-size="11" letter-spacing="1.1">LATEST</text>
-<rect x="35" y="200" width="101" height="62" rx="7" fill="#15362f" stroke="#75dcb3" stroke-opacity=".64"><title>10-16 23:29 UTC / success / https://github.com/Velord/HorizonBloom/actions/runs/38981736264</title></rect>
-<text x="85" y="227" fill="#75dcb3" font-family="Consolas,monospace" font-size="15" text-anchor="middle" font-weight="bold">PASS</text>
-<text x="85" y="246" fill="#abbccc" font-family="Consolas,monospace" font-size="10" text-anchor="middle">10-16 23:29</text>
-<rect x="152" y="200" width="101" height="62" rx="7" fill="#372822" stroke="#e1a17e" stroke-opacity=".64"><title>10-17 02:33 UTC / failure / https://github.com/Velord/HorizonBloom/actions/runs/38995371208</title></rect>
+<rect x="35" y="200" width="101" height="62" rx="7" fill="#372822" stroke="#e1a17e" stroke-opacity=".64"><title>10-17 16:16 UTC / failure / https://github.com/Velord/HorizonBloom/actions/runs/39048659731</title></rect>
+<text x="85" y="227" fill="#e1a17e" font-family="Consolas,monospace" font-size="15" text-anchor="middle" font-weight="bold">FAIL</text>
+<text x="85" y="246" fill="#abbccc" font-family="Consolas,monospace" font-size="10" text-anchor="middle">10-17 16:16</text>
+<rect x="152" y="200" width="101" height="62" rx="7" fill="#372822" stroke="#e1a17e" stroke-opacity=".64"><title>10-17 16:34 UTC / failure / https://github.com/Velord/HorizonBloom/actions/runs/39049989336</title></rect>
 <text x="202" y="227" fill="#e1a17e" font-family="Consolas,monospace" font-size="15" text-anchor="middle" font-weight="bold">FAIL</text>
-<text x="202" y="246" fill="#abbccc" font-family="Consolas,monospace" font-size="10" text-anchor="middle">10-17 02:33</text>
-<rect x="269" y="200" width="101" height="62" rx="7" fill="#372822" stroke="#e1a17e" stroke-opacity=".64"><title>10-17 03:12 UTC / failure / https://github.com/Velord/HorizonBloom/actions/runs/38997890184</title></rect>
-<text x="319" y="227" fill="#e1a17e" font-family="Consolas,monospace" font-size="15" text-anchor="middle" font-weight="bold">FAIL</text>
-<text x="319" y="246" fill="#abbccc" font-family="Consolas,monospace" font-size="10" text-anchor="middle">10-17 03:12</text>
-<rect x="386" y="200" width="101" height="62" rx="7" fill="#372822" stroke="#e1a17e" stroke-opacity=".64"><title>10-17 16:16 UTC / failure / https://github.com/Velord/HorizonBloom/actions/runs/39048659731</title></rect>
-<text x="436" y="227" fill="#e1a17e" font-family="Consolas,monospace" font-size="15" text-anchor="middle" font-weight="bold">FAIL</text>
-<text x="436" y="246" fill="#abbccc" font-family="Consolas,monospace" font-size="10" text-anchor="middle">10-17 16:16</text>
-<rect x="503" y="200" width="101" height="62" rx="7" fill="#372822" stroke="#e1a17e" stroke-opacity=".64"><title>10-17 16:34 UTC / failure / https://github.com/Velord/HorizonBloom/actions/runs/39049989336</title></rect>
-<text x="553" y="227" fill="#e1a17e" font-family="Consolas,monospace" font-size="15" text-anchor="middle" font-weight="bold">FAIL</text>
-<text x="553" y="246" fill="#abbccc" font-family="Consolas,monospace" font-size="10" text-anchor="middle">10-17 16:34</text>
-<rect x="620" y="200" width="101" height="62" rx="7" fill="#15362f" stroke="#75dcb3" stroke-opacity=".64"><title>10-17 16:40 UTC / success / https://github.com/Velord/HorizonBloom/actions/runs/39050438701</title></rect>
+<text x="202" y="246" fill="#abbccc" font-family="Consolas,monospace" font-size="10" text-anchor="middle">10-17 16:34</text>
+<rect x="269" y="200" width="101" height="62" rx="7" fill="#15362f" stroke="#75dcb3" stroke-opacity=".64"><title>10-17 16:40 UTC / success / https://github.com/Velord/HorizonBloom/actions/runs/39050438701</title></rect>
+<text x="319" y="227" fill="#75dcb3" font-family="Consolas,monospace" font-size="15" text-anchor="middle" font-weight="bold">PASS</text>
+<text x="319" y="246" fill="#abbccc" font-family="Consolas,monospace" font-size="10" text-anchor="middle">10-17 16:40</text>
+<rect x="386" y="200" width="101" height="62" rx="7" fill="#15362f" stroke="#75dcb3" stroke-opacity=".64"><title>10-17 16:55 UTC / success / https://github.com/Velord/HorizonBloom/actions/runs/39051534722</title></rect>
+<text x="436" y="227" fill="#75dcb3" font-family="Consolas,monospace" font-size="15" text-anchor="middle" font-weight="bold">PASS</text>
+<text x="436" y="246" fill="#abbccc" font-family="Consolas,monospace" font-size="10" text-anchor="middle">10-17 16:55</text>
+<rect x="503" y="200" width="101" height="62" rx="7" fill="#15362f" stroke="#75dcb3" stroke-opacity=".64"><title>10-17 19:23 UTC / success / https://github.com/Velord/HorizonBloom/actions/runs/39062240252</title></rect>
+<text x="553" y="227" fill="#75dcb3" font-family="Consolas,monospace" font-size="15" text-anchor="middle" font-weight="bold">PASS</text>
+<text x="553" y="246" fill="#abbccc" font-family="Consolas,monospace" font-size="10" text-anchor="middle">10-17 19:23</text>
+<rect x="620" y="200" width="101" height="62" rx="7" fill="#15362f" stroke="#75dcb3" stroke-opacity=".64"><title>10-17 22:28 UTC / success / https://github.com/Velord/HorizonBloom/actions/runs/39075239441</title></rect>
 <text x="670" y="227" fill="#75dcb3" font-family="Consolas,monospace" font-size="15" text-anchor="middle" font-weight="bold">PASS</text>
-<text x="670" y="246" fill="#abbccc" font-family="Consolas,monospace" font-size="10" text-anchor="middle">10-17 16:40</text>
-<rect x="737" y="200" width="101" height="62" rx="7" fill="#15362f" stroke="#75dcb3" stroke-opacity=".64"><title>10-17 16:55 UTC / success / https://github.com/Velord/HorizonBloom/actions/runs/39051534722</title></rect>
+<text x="670" y="246" fill="#abbccc" font-family="Consolas,monospace" font-size="10" text-anchor="middle">10-17 22:28</text>
+<rect x="737" y="200" width="101" height="62" rx="7" fill="#15362f" stroke="#75dcb3" stroke-opacity=".64"><title>10-18 00:31 UTC / success / https://github.com/Velord/HorizonBloom/actions/runs/39083047110</title></rect>
 <text x="787" y="227" fill="#75dcb3" font-family="Consolas,monospace" font-size="15" text-anchor="middle" font-weight="bold">PASS</text>
-<text x="787" y="246" fill="#abbccc" font-family="Consolas,monospace" font-size="10" text-anchor="middle">10-17 16:55</text>
-<rect x="854" y="200" width="101" height="62" rx="7" fill="#15362f" stroke="#75dcb3" stroke-opacity=".64"><title>10-17 19:23 UTC / success / https://github.com/Velord/HorizonBloom/actions/runs/39062240252</title></rect>
+<text x="787" y="246" fill="#abbccc" font-family="Consolas,monospace" font-size="10" text-anchor="middle">10-18 00:31</text>
+<rect x="854" y="200" width="101" height="62" rx="7" fill="#15362f" stroke="#75dcb3" stroke-opacity=".64"><title>10-18 00:53 UTC / success / https://github.com/Velord/HorizonBloom/actions/runs/39084429634</title></rect>
 <text x="904" y="227" fill="#75dcb3" font-family="Consolas,monospace" font-size="15" text-anchor="middle" font-weight="bold">PASS</text>
-<text x="904" y="246" fill="#abbccc" font-family="Consolas,monospace" font-size="10" text-anchor="middle">10-17 19:23</text>
-<rect x="971" y="200" width="101" height="62" rx="7" fill="#15362f" stroke="#75dcb3" stroke-opacity=".64"><title>10-17 22:28 UTC / success / https://github.com/Velord/HorizonBloom/actions/runs/39075239441</title></rect>
+<text x="904" y="246" fill="#abbccc" font-family="Consolas,monospace" font-size="10" text-anchor="middle">10-18 00:53</text>
+<rect x="971" y="200" width="101" height="62" rx="7" fill="#15362f" stroke="#75dcb3" stroke-opacity=".64"><title>10-18 01:47 UTC / success / https://github.com/Velord/HorizonBloom/actions/runs/39087758008</title></rect>
 <text x="1021" y="227" fill="#75dcb3" font-family="Consolas,monospace" font-size="15" text-anchor="middle" font-weight="bold">PASS</text>
-<text x="1021" y="246" fill="#abbccc" font-family="Consolas,monospace" font-size="10" text-anchor="middle">10-17 22:28</text>
+<text x="1021" y="246" fill="#abbccc" font-family="Consolas,monospace" font-size="10" text-anchor="middle">10-18 01:47</text>
 <circle cx="44" cy="298" r="5" fill="#75dcb3"/>
 <text x="58" y="303" fill="#9db0be" font-family="Segoe UI,Arial,sans-serif" font-size="12">Successful run</text>
 <circle cx="211" cy="298" r="5" fill="#e1a17e"/>
