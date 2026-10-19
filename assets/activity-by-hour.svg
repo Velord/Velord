@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1120" height="340" viewBox="0 0 1120 340" role="img" aria-labelledby="title description">
 <title id="title">GitHub public commit activity by local hour</title>
-<desc id="description">Last 90 days, Europe/Kyiv. 42 authored commits from 3 public repositories. Peak at 02:00 with 7 commits. These are public commits, not working hours or private coding activity.</desc>
+<desc id="description">Last 90 days, Europe/Kyiv. 42 authored commits from 3 public repositories. Peak at 02:00 with 8 commits. These are public commits, not working hours or private coding activity.</desc>
 <defs><linearGradient id="surface" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#101b28"/><stop offset="1" stop-color="#0a121b"/></linearGradient><linearGradient id="bar" x1="0" y1="1" x2="0" y2="0"><stop stop-color="#33566c"/><stop offset="1" stop-color="#83c9be"/></linearGradient></defs>
 <rect width="1120" height="340" rx="14" fill="url(#surface)"/>
 <text x="34" y="35" fill="#7ebdb4" font-family="Consolas,monospace" font-size="12" letter-spacing="1.9">RECENT PUBLIC COMMITS / LOCAL TIME</text>
@@ -12,19 +12,19 @@
 <path d="M34 211H1085" stroke="#314758" stroke-opacity=".42"/>
 <path d="M34 261H1085" stroke="#314758" stroke-opacity=".42"/>
 <rect x="40" y="115" width="27" height="146" rx="3" fill="#1a2a37" opacity=".68"/>
-<rect x="40" y="203" width="27" height="58" rx="3" fill="url(#bar)"><title>00:00–00:59 · 3 authored commits</title></rect>
+<rect x="40" y="210" width="27" height="51" rx="3" fill="url(#bar)"><title>00:00–00:59 · 3 authored commits</title></rect>
 <text x="53.5" y="283" fill="#b4c5d2" font-family="Consolas,monospace" font-size="11" text-anchor="middle">00</text>
 <rect x="84" y="115" width="27" height="146" rx="3" fill="#1a2a37" opacity=".68"/>
-<rect x="84" y="203" width="27" height="58" rx="3" fill="url(#bar)"><title>01:00–01:59 · 3 authored commits</title></rect>
+<rect x="84" y="210" width="27" height="51" rx="3" fill="url(#bar)"><title>01:00–01:59 · 3 authored commits</title></rect>
 <text x="97.5" y="283" fill="#b4c5d2" font-family="Consolas,monospace" font-size="11" text-anchor="middle">01</text>
 <rect x="128" y="115" width="27" height="146" rx="3" fill="#1a2a37" opacity=".68"/>
-<rect x="128" y="126" width="27" height="135" rx="3" fill="#e8b995"><title>02:00–02:59 · 7 authored commits</title></rect>
+<rect x="128" y="126" width="27" height="135" rx="3" fill="#e8b995"><title>02:00–02:59 · 8 authored commits</title></rect>
 <text x="141.5" y="283" fill="#b4c5d2" font-family="Consolas,monospace" font-size="11" text-anchor="middle">02</text>
 <rect x="172" y="115" width="27" height="146" rx="3" fill="#1a2a37" opacity=".68"/>
-<rect x="172" y="242" width="27" height="19" rx="3" fill="url(#bar)"><title>03:00–03:59 · 1 authored commits</title></rect>
+<rect x="172" y="227" width="27" height="34" rx="3" fill="url(#bar)"><title>03:00–03:59 · 2 authored commits</title></rect>
 <text x="185.5" y="283" fill="#b4c5d2" font-family="Consolas,monospace" font-size="11" text-anchor="middle">03</text>
 <rect x="216" y="115" width="27" height="146" rx="3" fill="#1a2a37" opacity=".68"/>
-<rect x="216" y="261" width="27" height="0" rx="3" fill="url(#bar)"><title>04:00–04:59 · 0 authored commits</title></rect>
+<rect x="216" y="244" width="27" height="17" rx="3" fill="url(#bar)"><title>04:00–04:59 · 1 authored commits</title></rect>
 <text x="229.5" y="283" fill="#b4c5d2" font-family="Consolas,monospace" font-size="11" text-anchor="middle">04</text>
 <rect x="260" y="115" width="27" height="146" rx="3" fill="#1a2a37" opacity=".68"/>
 <rect x="260" y="261" width="27" height="0" rx="3" fill="url(#bar)"><title>05:00–05:59 · 0 authored commits</title></rect>
@@ -51,39 +51,39 @@
 <rect x="568" y="261" width="27" height="0" rx="3" fill="url(#bar)"><title>12:00–12:59 · 0 authored commits</title></rect>
 <text x="581.5" y="283" fill="#b4c5d2" font-family="Consolas,monospace" font-size="11" text-anchor="middle">12</text>
 <rect x="612" y="115" width="27" height="146" rx="3" fill="#1a2a37" opacity=".68"/>
-<rect x="612" y="242" width="27" height="19" rx="3" fill="url(#bar)"><title>13:00–13:59 · 1 authored commits</title></rect>
+<rect x="612" y="244" width="27" height="17" rx="3" fill="url(#bar)"><title>13:00–13:59 · 1 authored commits</title></rect>
 <text x="625.5" y="283" fill="#b4c5d2" font-family="Consolas,monospace" font-size="11" text-anchor="middle">13</text>
 <rect x="656" y="115" width="27" height="146" rx="3" fill="#1a2a37" opacity=".68"/>
 <rect x="656" y="261" width="27" height="0" rx="3" fill="url(#bar)"><title>14:00–14:59 · 0 authored commits</title></rect>
 <text x="669.5" y="283" fill="#b4c5d2" font-family="Consolas,monospace" font-size="11" text-anchor="middle">14</text>
 <rect x="700" y="115" width="27" height="146" rx="3" fill="#1a2a37" opacity=".68"/>
-<rect x="700" y="184" width="27" height="77" rx="3" fill="url(#bar)"><title>15:00–15:59 · 4 authored commits</title></rect>
+<rect x="700" y="193" width="27" height="68" rx="3" fill="url(#bar)"><title>15:00–15:59 · 4 authored commits</title></rect>
 <text x="713.5" y="283" fill="#b4c5d2" font-family="Consolas,monospace" font-size="11" text-anchor="middle">15</text>
 <rect x="744" y="115" width="27" height="146" rx="3" fill="#1a2a37" opacity=".68"/>
 <rect x="744" y="261" width="27" height="0" rx="3" fill="url(#bar)"><title>16:00–16:59 · 0 authored commits</title></rect>
 <text x="757.5" y="283" fill="#b4c5d2" font-family="Consolas,monospace" font-size="11" text-anchor="middle">16</text>
 <rect x="788" y="115" width="27" height="146" rx="3" fill="#1a2a37" opacity=".68"/>
-<rect x="788" y="242" width="27" height="19" rx="3" fill="url(#bar)"><title>17:00–17:59 · 1 authored commits</title></rect>
+<rect x="788" y="244" width="27" height="17" rx="3" fill="url(#bar)"><title>17:00–17:59 · 1 authored commits</title></rect>
 <text x="801.5" y="283" fill="#b4c5d2" font-family="Consolas,monospace" font-size="11" text-anchor="middle">17</text>
 <rect x="832" y="115" width="27" height="146" rx="3" fill="#1a2a37" opacity=".68"/>
-<rect x="832" y="242" width="27" height="19" rx="3" fill="url(#bar)"><title>18:00–18:59 · 1 authored commits</title></rect>
+<rect x="832" y="244" width="27" height="17" rx="3" fill="url(#bar)"><title>18:00–18:59 · 1 authored commits</title></rect>
 <text x="845.5" y="283" fill="#b4c5d2" font-family="Consolas,monospace" font-size="11" text-anchor="middle">18</text>
 <rect x="876" y="115" width="27" height="146" rx="3" fill="#1a2a37" opacity=".68"/>
-<rect x="876" y="126" width="27" height="135" rx="3" fill="url(#bar)"><title>19:00–19:59 · 7 authored commits</title></rect>
+<rect x="876" y="160" width="27" height="101" rx="3" fill="url(#bar)"><title>19:00–19:59 · 6 authored commits</title></rect>
 <text x="889.5" y="283" fill="#b4c5d2" font-family="Consolas,monospace" font-size="11" text-anchor="middle">19</text>
 <rect x="920" y="115" width="27" height="146" rx="3" fill="#1a2a37" opacity=".68"/>
-<rect x="920" y="222" width="27" height="39" rx="3" fill="url(#bar)"><title>20:00–20:59 · 2 authored commits</title></rect>
+<rect x="920" y="227" width="27" height="34" rx="3" fill="url(#bar)"><title>20:00–20:59 · 2 authored commits</title></rect>
 <text x="933.5" y="283" fill="#b4c5d2" font-family="Consolas,monospace" font-size="11" text-anchor="middle">20</text>
 <rect x="964" y="115" width="27" height="146" rx="3" fill="#1a2a37" opacity=".68"/>
-<rect x="964" y="222" width="27" height="39" rx="3" fill="url(#bar)"><title>21:00–21:59 · 2 authored commits</title></rect>
+<rect x="964" y="261" width="27" height="0" rx="3" fill="url(#bar)"><title>21:00–21:59 · 0 authored commits</title></rect>
 <text x="977.5" y="283" fill="#b4c5d2" font-family="Consolas,monospace" font-size="11" text-anchor="middle">21</text>
 <rect x="1008" y="115" width="27" height="146" rx="3" fill="#1a2a37" opacity=".68"/>
-<rect x="1008" y="145" width="27" height="116" rx="3" fill="url(#bar)"><title>22:00–22:59 · 6 authored commits</title></rect>
+<rect x="1008" y="160" width="27" height="101" rx="3" fill="url(#bar)"><title>22:00–22:59 · 6 authored commits</title></rect>
 <text x="1021.5" y="283" fill="#b4c5d2" font-family="Consolas,monospace" font-size="11" text-anchor="middle">22</text>
 <rect x="1052" y="115" width="27" height="146" rx="3" fill="#1a2a37" opacity=".68"/>
-<rect x="1052" y="184" width="27" height="77" rx="3" fill="url(#bar)"><title>23:00–23:59 · 4 authored commits</title></rect>
+<rect x="1052" y="193" width="27" height="68" rx="3" fill="url(#bar)"><title>23:00–23:59 · 4 authored commits</title></rect>
 <text x="1065.5" y="283" fill="#b4c5d2" font-family="Consolas,monospace" font-size="11" text-anchor="middle">23</text>
 <path d="M34 261H1085" stroke="#7897a7" stroke-opacity=".5"/>
-<text x="34" y="315" fill="#8da3b4" font-family="Segoe UI,Arial,sans-serif" font-size="12">Authored 2026-07-19 – 2026-10-17 · Europe/Kyiv (DST-aware)</text>
+<text x="34" y="315" fill="#8da3b4" font-family="Segoe UI,Arial,sans-serif" font-size="12">Authored 2026-07-21 – 2026-10-19 · Europe/Kyiv (DST-aware)</text>
 <text x="1084" y="315" text-anchor="end" fill="#8da3b4" font-family="Segoe UI,Arial,sans-serif" font-size="12">Public commits only · Not hours worked</text>
 </svg>
